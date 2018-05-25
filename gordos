@@ -1,5 +1,5 @@
 #!/bin/bash
-# lista de directorios mas grandes
+# lista de archivos mas grandes del directorios actual
 
 ayuda()
 {
