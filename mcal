@@ -2,6 +2,7 @@
 # lista de directorios mas grandes
 
 clear
+
 ayuda()
 {
 	echo "./mcal -a año -m mes"
