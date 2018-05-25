@@ -1,0 +1,54 @@
+#!/bin/bash
+# lista de directorios mas grandes
+clear
+ayuda()
+{
+	echo "./mcal -a año -m mes"
+	exit 888
+}
+# si no hay ningun parametro
+if [ $# = 0 ];
+then
+	year=`date +"%Y"`
+	mes=`date +"%m"`
+	# ayuda
+	# puede ser los de hoy o mostrar la ayuda
+fi
+
+# Mientras el número de argumentos NO SEA 0
+while [ $# -ne 0 ]
+do
+    case "$1" in
+    -h|--help)
+        ayuda
+        ;;
+    -m)
+        mes="$2"
+        shift
+        ;;
+    -a)
+        year="$2"
+        shift
+        ;;
+    *)
+        echo "Argumento no válido"
+        ayuda
+        ;;
+    esac
+    shift
+done
+# si no puso un parametro tomo los de hoy 
+if [ -z $year ];
+then
+	year=`date +"%Y"`
+fi
+if [ -z $mes ];
+then
+	mes=`date +"%m"`
+fi
+
+echo "Calendario del "$mes"/"$year
+
+cal $mes $year
+
+exit $?
