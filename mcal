@@ -1,5 +1,6 @@
 #!/bin/bash
 # lista de directorios mas grandes
+
 clear
 ayuda()
 {
