@@ -35,4 +35,5 @@ fi
 echo "Ejecutando du $dir | sort -n | tail -$num"
 echo "*****************************************"
 du $dir | sort -n | tail -$num
+
 exit $?
