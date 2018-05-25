@@ -8,6 +8,7 @@ ayuda()
 	echo "./mcal -a año -m mes"
 	exit 888
 }
+
 # si no hay ningun parametro
 if [ $# = 0 ];
 then
