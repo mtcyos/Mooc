@@ -14,9 +14,9 @@ then
 fi
 
 case $# in
-0) echo "0 argumentos se aplican por omision"; dir=$HOME ; num=10  ;;
-1) echo "1 argumento [directorio] " ; dir=$1 ; num=10 ;;
-2) echo "2 argumento [directorio] [numero de archivos mostrados]" ; dir=$1 ; num=$2 ;;
+0) echo "0 - argumentos se aplican por omision"; dir=$HOME ; num=10  ;;
+1) echo "1 - argumento [directorio] " ; dir=$1 ; num=10 ;;
+2) echo "2 - argumento [directorio] [numero de archivos mostrados]" ; dir=$1 ; num=$2 ;;
 *) ayuda
 esac	
 
